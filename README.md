@@ -1,29 +1,27 @@
 # Jupyter Switch
 
-A command-line tool to convert between Markdown (.md) and Jupyter Notebook (.ipynb) formats.
+[![PyPI version](https://badge.fury.io/py/jupyter-switch.svg)](https://badge.fury.io/py/jupyter-switch)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Features
+A powerful, lightweight and intuitive command-line tool to seamlessly convert between Markdown (.md) and Jupyter Notebook (.ipynb) formats.
 
-- **Automatic detection**: Automatically detects whether the input file is `.md` or `.ipynb` and converts accordingly
-- **Bidirectional conversion**: Convert from Markdown to Jupyter Notebook and vice versa
-- **Backup protection**: Automatically creates backups when output files already exist
-- **Preserves structure**: Maintains code blocks, markdown content, and cell structure
+## ✨ Features
 
-## Installation
+- 🚀 **Automatic detection**: Automatically detects whether the input file is `.md` or `.ipynb` and converts accordingly
+- 🔄 **Bidirectional conversion**: Convert from Markdown to Jupyter Notebook and vice versa
+- 🛡️ **Backup protection**: Automatically creates backups when output files already exist
+- 📋 **Preserves structure**: Maintains code blocks, markdown content, and cell structure
+
+## Install & Usage from PyPI
+### Installation
 
 Install the package using pip:
 
 ```bash
-pip install .
+pip install jupyter-switch
 ```
 
-Or for development:
-
-```bash
-pip install -e .
-```
-
-## Usage
+### Usage
 
 The main command is `jupyter-switch`:
 
@@ -35,14 +33,16 @@ jupyter-switch example.md
 jupyter-switch example.ipynb
 ```
 
-### Examples
+## Install & Usage from uv(Recommended) ⚡️
+
+[`uvx`](https://docs.astral.sh/uv/concepts/tools/) will automatically install the package and run the command.
 
 ```bash
 # Convert README.md to README.ipynb
-jupyter-switch README.md
+uvx jupyter-switch README.md
 
 # Convert notebook.ipynb to notebook.md
-jupyter-switch notebook.ipynb
+uvx jupyter-switch notebook.ipynb
 ```
 
 The tool will automatically:
@@ -51,14 +51,14 @@ The tool will automatically:
 - Create a backup if the output file already exists
 - Convert the content while preserving structure
 
-## Help
+## Help 🆘
 
 ```bash
 jupyter-switch --help
 jupyter-switch --version
 ```
 
-## Conversion Details
+## Conversion Details 🔄
 
 ### Markdown to Jupyter Notebook
 - Python code blocks (```python...```) become code cells
@@ -70,10 +70,10 @@ jupyter-switch --version
 - Markdown cells are preserved as-is
 - Cell outputs are ignored during conversion
 
-## Requirements
+## Requirements 🐍
 
 - Python >= 3.10
 
-## License
+## License 📄
 
 MIT License
