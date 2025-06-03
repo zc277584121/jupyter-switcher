@@ -1,4 +1,4 @@
-# Jupyter Switcher
+# Jupyter Switch
 
 A command-line tool to convert between Markdown (.md) and Jupyter Notebook (.ipynb) formats.
 

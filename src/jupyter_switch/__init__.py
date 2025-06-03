@@ -1,5 +1,5 @@
 """
-Jupyter Switcher - Convert between Markdown and Jupyter Notebook formats
+Jupyter Switch - Convert between Markdown and Jupyter Notebook formats
 """
 
 from .switch_between_md_and_ipynb import main
