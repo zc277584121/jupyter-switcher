@@ -1,13 +1,16 @@
 [project]
 name = "jupyter-switcher"
 version = "0.1.0"
-description = "Add your description here"
+description = "Convert between Markdown (.md) and Jupyter Notebook (.ipynb) formats"
 readme = "README.md"
 authors = [
     { name = "ChengZi", email = "277584121@qq.com" }
 ]
 requires-python = ">=3.10"
 dependencies = []
+
+[project.scripts]
+jupyter-switch = "jupyter_switcher:main"
 
 [build-system]
 requires = ["hatchling"]
